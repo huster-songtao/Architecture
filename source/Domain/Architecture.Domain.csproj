@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Remove="Grid\**" />
+      <EmbeddedResource Remove="Grid\**" />
+      <None Remove="Grid\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="SqlSugarCore" Version="5.0.6.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Architecture\Architecture.csproj" />
+    </ItemGroup>
+</Project>
